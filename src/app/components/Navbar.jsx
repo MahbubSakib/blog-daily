@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { RegisterLink, LoginLink } from "@kinde-oss/kinde-auth-nextjs/components";
+
 
 export default function Navbar() {
     const list = <>
@@ -41,8 +43,10 @@ export default function Navbar() {
                         {list}
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <a className="btn">Button</a>
+                <div className="navbar-end space-x-3">
+                    <LoginLink className="btn">Log in</LoginLink>
+
+                    <RegisterLink className="btn">Register</RegisterLink>
                 </div>
             </div>
         </div>
