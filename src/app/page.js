@@ -18,7 +18,7 @@ export default async function Page() {
             <Navbar />
             <div className="w-10/12 mx-auto">
                 <div className="bg-gradient-to-r from-blue-500 to-purple-500 text-white py-12 rounded-lg shadow-md mt-5">
-                    <h1 className="text-4xl font-extrabold text-center">Welcome to the Blog</h1>
+                    <h1 className="text-4xl font-extrabold text-center">Welcome to My Blog</h1>
                     <p className="mt-4 text-lg text-center">
                         Discover insightful posts, ideas, and stories. Click on a post to dive in!
                     </p>
@@ -30,7 +30,7 @@ export default async function Page() {
                         {posts.map((post) => (
                             <div
                                 key={post.id}
-                                className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200"
+                                className="p-6 bg-slate-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200"
                             >
                                 <h3 className="text-lg font-semibold mb-2 first-letter:uppercase">{post.title}</h3>
                                 <Link
